@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: user-api
+
+server:
+  port: ${PORT:8000}
+
+
