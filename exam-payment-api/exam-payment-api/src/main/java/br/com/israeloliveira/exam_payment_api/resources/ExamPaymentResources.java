@@ -1,5 +1,4 @@
 package br.com.israeloliveira.exam_payment_api.resources;
-
 import br.com.israeloliveira.exam_payment_api.domain.ExamPayment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
