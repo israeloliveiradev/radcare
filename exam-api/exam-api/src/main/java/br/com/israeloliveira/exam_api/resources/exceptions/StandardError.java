@@ -1,10 +1,9 @@
-package br.com.israeloliveira.user_api.resources.exceptions;
+package br.com.israeloliveira.exam_api.resources.exceptions;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.experimental.StandardException;
 
 import java.time.LocalDateTime;
 
