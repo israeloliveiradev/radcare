@@ -48,36 +48,19 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public Patient updatePatient(Long id, Patient patient) {
-        Patient patientToUpdate = patientRepository.findById(id)
-                .orElseThrow(() -> new ObjectNotFoundException("Object not found"));
+        Patient patientToUpdate = patientRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Object not found"));
 
-
-        if (patient.getName() != null) {
-            patientToUpdate.setName(patient.getName());
-        }
-        if (patient.getEmail() != null) {
-            patientToUpdate.setEmail(patient.getEmail());
-        }
-        if (patient.getPassword() != null) {
-            patientToUpdate.setPassword(patient.getPassword());
-        }
-        if (patient.getGender() != null) {
-            patientToUpdate.setGender(patient.getGender());
-        }
-        if (patient.getBirthDate() != null) {
-            patientToUpdate.setBirthDate(patient.getBirthDate());
-        }
-        if (patient.getPhoneNumber() != null) {
-            patientToUpdate.setPhoneNumber(patient.getPhoneNumber());
-        }
-        if (patient.getDocumentId() != null) {
-            patientToUpdate.setDocumentId(patient.getDocumentId());
-        }
-        if (patient.getZipCode() != null) {
-            patientToUpdate.setZipCode(patient.getZipCode());
-        }
+        patientToUpdate.setName(patient.getName());
+        patientToUpdate.setEmail(patient.getEmail());
+        patientToUpdate.setPassword(patient.getPassword());
+        patientToUpdate.setGender(patient.getGender());
+        patientToUpdate.setBirthDate(patient.getBirthDate());
+        patientToUpdate.setPhoneNumber(patient.getPhoneNumber());
+        patientToUpdate.setDocumentId(patient.getDocumentId());
+        patientToUpdate.setZipCode(patient.getZipCode());
 
         return patientRepository.save(patientToUpdate);
+
     }
 
 }

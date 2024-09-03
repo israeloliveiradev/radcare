@@ -2,14 +2,12 @@ package br.com.israeloliveira.exam_payment_api.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
+
+import static jakarta.persistence.GenerationType.AUTO;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,6 +24,8 @@ public class Patient {
     private String password;
 
     private String gender;
+
+    private String phoneNumber;
 
     private LocalDate birthDate;
 

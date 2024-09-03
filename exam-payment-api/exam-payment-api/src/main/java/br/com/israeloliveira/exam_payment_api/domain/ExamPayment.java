@@ -24,15 +24,21 @@ public class ExamPayment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String patientName;
+    private String PatientName;
+
+    private Long patientId;
 
     private Long examId;
+
+    private String examName;
 
     private Double totalPayment;
 
     private String paymentMethod;
 
-    private LocalDateTime paymentData;
+    private LocalDateTime paymentDate;
+
+    private Boolean paymentStatus = false;
 
 
 }

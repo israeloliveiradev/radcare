@@ -1,5 +1,5 @@
-package br.com.israeloliveira.user_api.resources.exceptions;
-import br.com.israeloliveira.user_api.service.exceptions.ObjectNotFoundException;
+package br.com.israeloliveira.exam_payment_api.resources.exceptions;
+import br.com.israeloliveira.exam_payment_api.service.exceptions.ObjectNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

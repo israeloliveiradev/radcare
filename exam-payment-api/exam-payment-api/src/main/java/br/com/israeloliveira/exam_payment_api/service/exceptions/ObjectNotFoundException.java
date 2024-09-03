@@ -1,4 +1,4 @@
-package br.com.israeloliveira.user_api.service.exceptions;
+package br.com.israeloliveira.exam_payment_api.service.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException {
 
