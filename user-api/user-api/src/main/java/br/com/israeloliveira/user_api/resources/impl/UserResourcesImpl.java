@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(value = "/api/users")
+@RequestMapping(value = "/api/patients")
 public class UserResourcesImpl implements UserResources {
 
 

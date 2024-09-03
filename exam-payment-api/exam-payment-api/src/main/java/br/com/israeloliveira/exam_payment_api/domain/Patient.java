@@ -1,27 +1,22 @@
-package br.com.israeloliveira.user_api.domain;
+package br.com.israeloliveira.exam_payment_api.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.UUID;
-
-import static jakarta.persistence.GenerationType.AUTO;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity(name = "tb_users")
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Patient {
 
-    @Id
-    @EqualsAndHashCode.Include
-    @GeneratedValue(strategy = AUTO)
     private Long id;
 
     private String name;

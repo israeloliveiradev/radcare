@@ -23,7 +23,7 @@ public class UserApiApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		userRepository.saveAll(List.of(
-				new Patient(null, "Israel", "Oliveira", "israel@email.com", "1234","man", LocalDate.of(1998,9, 8), "02542000","111.111.111-11")
+				new Patient(null, "Israel Oliveira", "israel@email.com", "1234","man", LocalDate.of(1998,9, 8), "02542000","111.111.111-11")
 		));
 
 	}
