@@ -4,11 +4,13 @@ package br.com.israeloliveira.user_api.service;
 import br.com.israeloliveira.user_api.domain.Patient;
 
 import java.util.List;
-import java.util.UUID;
 
 
-public interface UserService {
+public interface PatientService {
 
     Patient findById(Long id);
     List<Patient> findAll();
+    Patient createNewPatient(Patient patient);
+    void deletePatient(Long id);
+    Patient updatePatient(Long id, Patient patient);
 }

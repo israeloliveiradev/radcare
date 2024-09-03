@@ -1,8 +1,8 @@
 package br.com.israeloliveira.user_api.service.impl;
 
 import br.com.israeloliveira.user_api.domain.Patient;
-import br.com.israeloliveira.user_api.repository.UserRepository;
-import br.com.israeloliveira.user_api.service.UserService;
+import br.com.israeloliveira.user_api.repository.PatientRepository;
+import br.com.israeloliveira.user_api.service.PatientService;
 import br.com.israeloliveira.user_api.service.exceptions.ObjectNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +12,10 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceIml implements UserService {
+public class PatientServiceImpl implements PatientService {
 
     @Autowired
-    UserRepository userRepository;
+    PatientRepository userRepository;
 
     @Override
     public Patient findById(Long id) {

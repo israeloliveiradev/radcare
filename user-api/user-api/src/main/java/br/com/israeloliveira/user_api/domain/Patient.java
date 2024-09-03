@@ -32,6 +32,8 @@ public class Patient {
 
     private String gender;
 
+    private String phoneNumber;
+
     private LocalDate birthDate;
 
     private String zipCode;
