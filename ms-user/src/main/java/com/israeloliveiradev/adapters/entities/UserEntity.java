@@ -29,5 +29,6 @@ public class UserEntity {
     private String documentId;
 
     private Boolean administrator;
+
 }
 
