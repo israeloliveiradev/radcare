@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-library/projeto-radcare.common-library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-library/projeto-radcare.common-library.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-user/projeto-radcare.ms-user.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-user/projeto-radcare.ms-user.main.iml" />
-    </modules>
-  </component>
-</project>
